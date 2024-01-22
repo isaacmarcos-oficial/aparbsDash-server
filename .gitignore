@@ -20,3 +20,4 @@ Thumbs.db
 
 # Ignorar arquivos de cache
 .cache/
+.vercel
