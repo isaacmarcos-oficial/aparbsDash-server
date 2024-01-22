@@ -8,6 +8,9 @@
     "build": "tsc",
     "start": "node dist/index.js"
   },
+  "compilerOptions": {
+    "ourDir": "./dist"
+  },
   "keywords": [],
   "author": "Isaac Marcos | Digital Solutions <contato@isaacmarcos.com.br>",
   "license": "ISC",
