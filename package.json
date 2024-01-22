@@ -1,0 +1,27 @@
+{
+  "name": "aparbs-dash-server",
+  "version": "1.0.0",
+  "description": "Servidor do Aparbs Dash",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsnd --respawn --transpile-only index.ts",
+    "build": "tsc"
+  },
+  "keywords": [],
+  "author": "Isaac Marcos | Digital Solutions <contato@isaacmarcos.com.br>",
+  "license": "ISC",
+  "dependencies": {
+    "apollo-server": "^3.10.1",
+    "class-validator": "^0.13.2",
+    "dotenv": "^16.3.2",
+    "graphql": "^15.3.0",
+    "mongoose": "^6.5.2",
+    "reflect-metadata": "^0.1.13",
+    "type-graphql": "^1.1.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.6",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.3.3"
+  }
+}
