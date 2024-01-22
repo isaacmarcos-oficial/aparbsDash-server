@@ -1,10 +1,6 @@
 "use strict";
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
 Object.defineProperty(exports, "__esModule", { value: true });
 require("reflect-metadata");
-const path_1 = __importDefault(require("path"));
 require("dotenv").config({ path: ".env" });
 require("./mongodb/connect");
 const type_graphql_1 = require("type-graphql");
@@ -13,7 +9,7 @@ const ClientResolver_1 = require("./Resolvers/ClientResolver");
 async function main() {
     const schema = await (0, type_graphql_1.buildSchema)({
         resolvers: [ClientResolver_1.ClientResolver],
-        emitSchemaFile: path_1.default.resolve(__dirname, "scheme.ggl"),
+        // emitSchemaFile: path.resolve(__dirname, "scheme.ggl"),
     });
     console.log();
     const server = new apollo_server_1.ApolloServer({

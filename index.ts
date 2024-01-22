@@ -9,7 +9,7 @@ import { ClientResolver } from "./Resolvers/ClientResolver";
 async function main() {
   const schema = await buildSchema({
     resolvers: [ClientResolver],
-    emitSchemaFile: path.resolve(__dirname, "scheme.ggl"),
+    // emitSchemaFile: path.resolve(__dirname, "scheme.ggl"),
   });
   console.log()
 
