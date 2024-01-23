@@ -9,16 +9,17 @@ import { ClientResolver } from "./Resolvers/ClientResolver";
 async function main() {
   const schema = await buildSchema({
     resolvers: [ClientResolver],
-    // emitSchemaFile: path.resolve(__dirname, "scheme.ggl"),
   });
-  console.log()
+  console.log();
 
   const server = new ApolloServer({
     schema,
+    introspection: true,
+    
     cors: {
-      origin: process.env.FRONTEND_ENDPOINT,
-      credentials: true
-    }
+      origin: "*",
+      credentials: true,
+    },
   });
 
   const { url } = await server.listen();

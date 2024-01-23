@@ -9,15 +9,15 @@ const ClientResolver_1 = require("./Resolvers/ClientResolver");
 async function main() {
     const schema = await (0, type_graphql_1.buildSchema)({
         resolvers: [ClientResolver_1.ClientResolver],
-        // emitSchemaFile: path.resolve(__dirname, "scheme.ggl"),
     });
     console.log();
     const server = new apollo_server_1.ApolloServer({
         schema,
+        introspection: true,
         cors: {
-            origin: process.env.FRONTEND_ENDPOINT,
-            credentials: true
-        }
+            origin: "*",
+            credentials: true,
+        },
     });
     const { url } = await server.listen();
     console.log("Server running on " + url);
