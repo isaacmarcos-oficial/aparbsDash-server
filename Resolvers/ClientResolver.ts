@@ -15,6 +15,24 @@ export class ClientResolver {
     return await ClientMongo.findOne({ _id: id });
   }
 
+  @Query(() => [Client])
+  async clientsFiltered(
+    @Arg("clientNumber", { nullable: true }) clientNumber: string,
+    @Arg("clientName", { nullable: true }) clientName: string
+  ) {
+    const query: any = {};
+
+    if (clientNumber) {
+      query.clientNumber = clientNumber;
+    }
+
+    if (clientName) {
+      query.name = new RegExp(clientName, "i");
+    }
+
+    return await ClientMongo.find(query);
+  }
+
   @Mutation(() => Client)
   async createClient(
     @Arg("createClientObject") createClientObject: CreateClientInput

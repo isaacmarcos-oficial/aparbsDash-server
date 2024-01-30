@@ -24,6 +24,16 @@ let ClientResolver = class ClientResolver {
     async client(id) {
         return await Client_2.ClientMongo.findOne({ _id: id });
     }
+    async clientsFiltered(clientNumber, clientName) {
+        const query = {};
+        if (clientNumber) {
+            query.clientNumber = clientNumber;
+        }
+        if (clientName) {
+            query.name = new RegExp(clientName, "i");
+        }
+        return await Client_2.ClientMongo.find(query);
+    }
     async createClient(createClientObject) {
         const { name, phone, serviceOrder, clientNumber, dischargeDate, sentToday, sentThreeDays, sentSevenDays, sentOneMonth, sentThreeMonths, sentSixMonths, } = createClientObject;
         return await Client_2.ClientMongo.create({
@@ -64,6 +74,14 @@ __decorate([
     __metadata("design:paramtypes", [String]),
     __metadata("design:returntype", Promise)
 ], ClientResolver.prototype, "client", null);
+__decorate([
+    (0, type_graphql_1.Query)(() => [Client_1.Client]),
+    __param(0, (0, type_graphql_1.Arg)("clientNumber", { nullable: true })),
+    __param(1, (0, type_graphql_1.Arg)("clientName", { nullable: true })),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [String, String]),
+    __metadata("design:returntype", Promise)
+], ClientResolver.prototype, "clientsFiltered", null);
 __decorate([
     (0, type_graphql_1.Mutation)(() => Client_1.Client),
     __param(0, (0, type_graphql_1.Arg)("createClientObject")),
