@@ -12,7 +12,7 @@ export class CreateClientInput {
   serviceOrder: string;
   
   @Field()
-  vehicle: string;
+  clientNumber: string;
 
   @Field()
   dischargeDate: Date;
@@ -51,7 +51,7 @@ export class EditClientInput {
   serviceOrder: string;
   
   @Field()
-  vehicle: string;
+  clientNumber: string;
 
   @Field()
   dischargeDate: Date;

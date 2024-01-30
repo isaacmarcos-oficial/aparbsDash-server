@@ -33,7 +33,7 @@ __decorate([
 __decorate([
     (0, type_graphql_1.Field)(),
     __metadata("design:type", String)
-], Client.prototype, "vehicle", void 0);
+], Client.prototype, "clientNumber", void 0);
 __decorate([
     (0, type_graphql_1.Field)(),
     __metadata("design:type", String)

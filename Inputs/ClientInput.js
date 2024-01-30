@@ -29,7 +29,7 @@ __decorate([
 __decorate([
     (0, type_graphql_1.Field)(),
     __metadata("design:type", String)
-], CreateClientInput.prototype, "vehicle", void 0);
+], CreateClientInput.prototype, "clientNumber", void 0);
 __decorate([
     (0, type_graphql_1.Field)(),
     __metadata("design:type", Date)
@@ -83,7 +83,7 @@ __decorate([
 __decorate([
     (0, type_graphql_1.Field)(),
     __metadata("design:type", String)
-], EditClientInput.prototype, "vehicle", void 0);
+], EditClientInput.prototype, "clientNumber", void 0);
 __decorate([
     (0, type_graphql_1.Field)(),
     __metadata("design:type", Date)

@@ -15,7 +15,7 @@ export class Client {
   serviceOrder: string;
   
   @Field()
-  vehicle: string;
+  clientNumber: string;
 
   @Field()
   dischargeDate: string;

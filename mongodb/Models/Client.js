@@ -8,8 +8,8 @@ const mongoose_1 = __importDefault(require("mongoose"));
 const schema = new mongoose_1.default.Schema({
     name: String,
     phone: String,
-    serviceOrder: Number,
-    vehicle: String,
+    serviceOrder: String,
+    clientNumber: String,
     dischargeDate: Date,
     sentToday: Boolean,
     sentThreeDays: Boolean,

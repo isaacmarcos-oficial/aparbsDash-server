@@ -25,12 +25,12 @@ let ClientResolver = class ClientResolver {
         return await Client_2.ClientMongo.findOne({ _id: id });
     }
     async createClient(createClientObject) {
-        const { name, phone, serviceOrder, vehicle, dischargeDate, sentToday, sentThreeDays, sentSevenDays, sentOneMonth, sentThreeMonths, sentSixMonths, } = createClientObject;
+        const { name, phone, serviceOrder, clientNumber, dischargeDate, sentToday, sentThreeDays, sentSevenDays, sentOneMonth, sentThreeMonths, sentSixMonths, } = createClientObject;
         return await Client_2.ClientMongo.create({
             name,
             phone,
             serviceOrder,
-            vehicle,
+            clientNumber,
             dischargeDate,
             sentToday,
             sentThreeDays,

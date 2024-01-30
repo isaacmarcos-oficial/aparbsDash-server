@@ -15,7 +15,7 @@ type Client {
   sentThreeMonths: Boolean!
   sentToday: Boolean!
   serviceOrder: String!
-  vehicle: String!
+  clientNumber: String!
 }
 
 input CreateClientInput {
@@ -29,7 +29,7 @@ input CreateClientInput {
   sentThreeMonths: Boolean!
   sentToday: Boolean!
   serviceOrder: String!
-  vehicle: String!
+  clientNumber: String!
 }
 
 """
@@ -49,7 +49,7 @@ input EditClientInput {
   sentThreeMonths: Boolean!
   sentToday: Boolean!
   serviceOrder: String!
-  vehicle: String!
+  clientNumber: String!
 }
 
 type Mutation {
