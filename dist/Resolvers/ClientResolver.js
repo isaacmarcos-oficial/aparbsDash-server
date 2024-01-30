@@ -27,7 +27,7 @@ let ClientResolver = class ClientResolver {
     async clientsFiltered(clientNumber, clientName) {
         const query = {};
         if (clientNumber) {
-            query.clientNumber = clientNumber;
+            query.clientNumber = new RegExp(clientNumber, "i");
         }
         if (clientName) {
             query.name = new RegExp(clientName, "i");

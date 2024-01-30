@@ -23,7 +23,7 @@ export class ClientResolver {
     const query: any = {};
 
     if (clientNumber) {
-      query.clientNumber = clientNumber;
+      query.clientNumber = new RegExp(clientNumber, "i");
     }
 
     if (clientName) {
