@@ -35,7 +35,7 @@ __decorate([
     __metadata("design:type", String)
 ], CreateClientInput.prototype, "dischargeDate", void 0);
 __decorate([
-    (0, type_graphql_1.Field)(),
+    (0, type_graphql_1.Field)({ nullable: true }),
     __metadata("design:type", String)
 ], CreateClientInput.prototype, "note", void 0);
 __decorate([
@@ -93,7 +93,7 @@ __decorate([
     __metadata("design:type", String)
 ], EditClientInput.prototype, "dischargeDate", void 0);
 __decorate([
-    (0, type_graphql_1.Field)(),
+    (0, type_graphql_1.Field)({ nullable: true }),
     __metadata("design:type", String)
 ], EditClientInput.prototype, "note", void 0);
 __decorate([

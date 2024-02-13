@@ -17,7 +17,7 @@ export class CreateClientInput {
   @Field()
   dischargeDate: string;
 
-  @Field()
+  @Field({nullable: true})
   note: string;
 
   @Field()
@@ -59,7 +59,7 @@ export class EditClientInput {
   @Field()
   dischargeDate: string;
 
-  @Field()
+  @Field({nullable: true})
   note: string;
 
   @Field()

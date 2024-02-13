@@ -39,7 +39,7 @@ __decorate([
     __metadata("design:type", String)
 ], Client.prototype, "dischargeDate", void 0);
 __decorate([
-    (0, type_graphql_1.Field)(),
+    (0, type_graphql_1.Field)({ nullable: true }),
     __metadata("design:type", String)
 ], Client.prototype, "note", void 0);
 __decorate([

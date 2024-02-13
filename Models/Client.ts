@@ -20,7 +20,7 @@ export class Client {
   @Field()
   dischargeDate: string;
 
-  @Field()
+  @Field({nullable: true})
   note: string;
 
   @Field()
