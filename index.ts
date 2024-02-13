@@ -5,6 +5,7 @@ import "./mongodb/connect";
 import { buildSchema } from "type-graphql";
 import { ApolloServer } from "apollo-server";
 import { ClientResolver } from "./Resolvers/ClientResolver";
+import { migrateAddStatus } from "./scripts/migrate-add-dischargeDAte";
 
 async function main() {
   const schema = await buildSchema({
@@ -21,6 +22,9 @@ async function main() {
       credentials: true,
     },
   });
+
+    // Script para Migração
+  // await migrateAddStatus()
 
   const { url } = await server.listen();
   console.log("Server running on " + url);

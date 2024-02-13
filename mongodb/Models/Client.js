@@ -10,7 +10,7 @@ const schema = new mongoose_1.default.Schema({
     phone: String,
     serviceOrder: String,
     clientNumber: String,
-    dischargeDate: Date,
+    dischargeDate: String,
     sentToday: Boolean,
     sentThreeDays: Boolean,
     sentSevenDays: Boolean,

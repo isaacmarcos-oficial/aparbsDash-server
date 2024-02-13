@@ -21,6 +21,9 @@ export class Client {
   dischargeDate: string;
 
   @Field()
+  note: string;
+
+  @Field()
   sentToday: boolean;
   
   @Field()

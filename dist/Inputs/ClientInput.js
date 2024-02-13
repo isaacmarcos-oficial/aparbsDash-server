@@ -32,8 +32,12 @@ __decorate([
 ], CreateClientInput.prototype, "clientNumber", void 0);
 __decorate([
     (0, type_graphql_1.Field)(),
-    __metadata("design:type", Date)
+    __metadata("design:type", String)
 ], CreateClientInput.prototype, "dischargeDate", void 0);
+__decorate([
+    (0, type_graphql_1.Field)(),
+    __metadata("design:type", String)
+], CreateClientInput.prototype, "note", void 0);
 __decorate([
     (0, type_graphql_1.Field)(),
     __metadata("design:type", Boolean)
@@ -86,8 +90,12 @@ __decorate([
 ], EditClientInput.prototype, "clientNumber", void 0);
 __decorate([
     (0, type_graphql_1.Field)(),
-    __metadata("design:type", Date)
+    __metadata("design:type", String)
 ], EditClientInput.prototype, "dischargeDate", void 0);
+__decorate([
+    (0, type_graphql_1.Field)(),
+    __metadata("design:type", String)
+], EditClientInput.prototype, "note", void 0);
 __decorate([
     (0, type_graphql_1.Field)(),
     __metadata("design:type", Boolean)

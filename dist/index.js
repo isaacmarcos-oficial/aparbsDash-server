@@ -19,6 +19,8 @@ async function main() {
             credentials: true,
         },
     });
+    // Script para Migração
+    // await migrateAddStatus()
     const { url } = await server.listen();
     console.log("Server running on " + url);
 }

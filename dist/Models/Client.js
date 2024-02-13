@@ -40,6 +40,10 @@ __decorate([
 ], Client.prototype, "dischargeDate", void 0);
 __decorate([
     (0, type_graphql_1.Field)(),
+    __metadata("design:type", String)
+], Client.prototype, "note", void 0);
+__decorate([
+    (0, type_graphql_1.Field)(),
     __metadata("design:type", Boolean)
 ], Client.prototype, "sentToday", void 0);
 __decorate([

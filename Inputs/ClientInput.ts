@@ -15,7 +15,10 @@ export class CreateClientInput {
   clientNumber: string;
 
   @Field()
-  dischargeDate: Date;
+  dischargeDate: string;
+
+  @Field()
+  note: string;
 
   @Field()
   sentToday: boolean;
@@ -54,7 +57,10 @@ export class EditClientInput {
   clientNumber: string;
 
   @Field()
-  dischargeDate: Date;
+  dischargeDate: string;
+
+  @Field()
+  note: string;
 
   @Field()
   sentToday: boolean;
